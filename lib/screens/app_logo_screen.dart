@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todos_d_app/themes/app_theme_data.dart';
 
-import "../constants/app_typography.dart";
 import "../constants/app_colors.dart";
 
 class AppLogoScreen extends StatelessWidget {
@@ -13,14 +13,9 @@ class AppLogoScreen extends StatelessWidget {
       body: Center(
         child: Text(
           "ToDos:D",
-          style: TextStyle(
-            color: AppColors.textColor,
-            fontFamily: "Poppins",
-            fontSize: AppTypography.xxxl,
-            fontWeight: FontWeight.w900,
-          )
+          style: appThemeData.textTheme.displayLarge,
         )
-      ),
+      )
     );
   }
 }
